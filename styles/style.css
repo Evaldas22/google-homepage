@@ -1,0 +1,45 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-form {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 50%;
+    grid-template-areas: 
+    "searchbar searchbar searchbar searchbar"
+    ". searchBtn searchLucky ."
+    ". searchOffered searchOffered .";
+}
+
+.search-bar {
+    grid-area: searchbar;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+
+.search-bar:focus {
+    outline: none;
+    padding: 0 15px;
+}
+
+.search-button {
+    grid-area: searchBtn;
+}
+
+.search-button-lucky {
+    grid-area: searchLucky;
+}
+
+.search-offered {
+    grid-area: searchOffered;
+    justify-self: center;
+}
