@@ -85,3 +85,38 @@
     grid-area: searchOffered;
     justify-self: center;
 }
+
+footer {
+    width: 100%;
+    color: #656565;
+    position: absolute;
+    bottom: 0;
+}
+
+.upper-footer, .lower-footer{
+    height: 20px;
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border: 0.1px solid rgb(228, 228, 228);
+}
+
+.upper-footer {
+    border-bottom: none;
+}
+
+footer div a {
+    text-decoration: none;
+    color: #656565;
+    margin-right: 15px;
+}
+
+.left-footer {
+    width: 50%;
+    float: left;
+}
+
+.right-footer {
+    float: right;
+}
