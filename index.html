@@ -6,20 +6,40 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
   </head>
   <body>
-    <nav class="navbar">
-      <a class="nav-item" href="#">Gmail</a>
-      <a class="nav-item" href="#">Images</a>
-      <a class="nav-item menu-icon" href="#" ></a>
-      <a class="nav-item user-icon" href="#"></a>
-    </nav>
-    <main class="container">
-      <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <header>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-item" href="#">Gmail</a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">Images</a>
+          </li>
+          <li>
+            <a class="nav-item menu-icon" href="#">
+              <img src="https://cdn0.iconfinder.com/data/icons/basic-ui-elements-plain/420/06_menu_grid-512.png">
+            </a>
+          </li>
+          <li>
+            <a class="nav-item user-icon" href="#">
+              <img src="https://lh3.googleusercontent.com/ogw/ADGmqu_NGgsEHdHdjBJ-W5kxeBDfDu5ldS4fOW7zsfXh=s32-c-mo">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="google-logo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+      </div>
       <form class="search-form">
         <input class="search-bar" type="text">
-        <input class="search-button search" type="button" value="Google Search">
-        <input class="search-button lucky" type="button" value="I'm Feeling Lucky">
-        <p class="search-offered">Google offered in: <a href="#">english</a></p>
+        <div class="button-group">
+          <input class="search-button" type="button" value="Google Search">
+          <input class="search-button" type="button" value="I'm Feeling Lucky">
+        </div>
       </form>
+      <p class="search-offered">Google offered in: <a href="#">english</a></p>
     </main>
     <footer>
       <div class="upper-footer">

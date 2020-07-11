@@ -1,70 +1,73 @@
-.navbar {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.nav-list {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    padding-top: 5px;
 }
 
-.nav-item {
-    color: #2F2835;
+.nav-list li{
+    align-self: center;
+    margin: 0 10px;
+}
+
+.navbar a {
     text-decoration: none;
-    margin: 20px 12px;
+    color: #333333;
 }
 
-.menu-icon {
-    height: 40px;
-    width: 40px;
-    margin-top: 10px;
-    background: url("../assets/menu.png") 0 0 / 40px 40px;
+.menu-icon img{
+    width: 100%;
+    max-width: 20px;
+    height: auto;
 }
 
-.user-icon {
-    height: 40px;
-    width: 40px;
-    margin-top: 10px;
-    background: url("https://lh3.googleusercontent.com/ogw/ADGmqu_NGgsEHdHdjBJ-W5kxeBDfDu5ldS4fOW7zsfXh=s32-c-mo") 0 0 / 40px 40px;
+.user-icon img {
     border-radius: 50%;
 }
 
-.container {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main {
+    margin-top: 100px;
 }
 
-.search-form {
-    width: 30%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 10px;
-    row-gap: 50%;
-    grid-template-areas: 
-    "searchbar searchbar searchbar searchbar"
-    ". searchBtn searchLucky ."
-    ". searchOffered searchOffered .";
+.google-logo img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .search-bar {
-    grid-area: searchbar;
-    height: 30px;
-    border: 1px solid grey;
+    display: block;
+    height: 35px;
+    width: 35%;
+    border: 1px solid #d1d1d1;
     border-radius: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .search-bar:focus {
     outline: none;
 }
 
+.button-group {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
 .search-button {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin: 0 5px;
+    padding: 10px 15px;
     border: 1px solid #f2f2f2;
     border-radius: 5px;
-    color: #2F2835;
+    color: #5F6368;
     background-color: #f2f2f2;
     outline: none;
 }
@@ -74,17 +77,9 @@
     border: 1px solid #c6c6c6;
 }
 
-.search{
-    grid-area: searchBtn;
-}
-
-.lucky {
-    grid-area: searchLucky;
-}
-
 .search-offered {
-    grid-area: searchOffered;
-    justify-self: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 footer {
@@ -95,11 +90,10 @@ footer {
 }
 
 .upper-footer, .lower-footer{
-    height: 20px;
+    height: 3em;
+    line-height: 3em;
     background-color: #F2F2F2;
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-bottom: 10px;
+    padding-left: 2em;
     border: 0.1px solid rgb(228, 228, 228);
 }
 
